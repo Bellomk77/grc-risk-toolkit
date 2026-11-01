@@ -8,6 +8,8 @@ Turns a cyber risk assessment from a static spreadsheet into **version-controlle
 
 ![Executive report](docs/executive_report.png)
 
+**▶ [Live demo](https://mohammed-bello-ibrahim.vercel.app/demos/grc.html)**: implement controls and watch the heat map, risk register and roadmap recalculate.
+
 ---
 
 ## Example: Maplewood Credit Union (fictional)
