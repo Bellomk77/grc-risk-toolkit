@@ -1,0 +1,11 @@
+id,scenario,source,assets,inherent_score,inherent_rating,control_effectiveness,residual_likelihood,residual_impact,residual_score,residual_rating,worst_impact_dimension,control_gaps
+R01,Ransomware delivered by phishing encrypts core systems and backups,Organized crime,"Staff laptops and workstations, Core banking platform, Backup infrastructure",20,Critical,0.38,2.8,4.5,12.6,High,financial,"PR.AT-01, PR.AA-03, PR.PS-02, DE.CM-09, PR.DS-11, RC.RP-03, RC.RP-01, RS.MA-01, PR.IR-01"
+R06,Unpatched VPN appliance is exploited for network access,Organized crime / state actor,"Remote access VPN, Core banking platform",16,Critical,0.4,3.0,4.0,12.2,High,financial,"PR.PS-02, ID.RA-01, PR.AA-03, PR.IR-01, DE.CM-01"
+R03,Breach at a critical vendor exposes member data,Third party,"Core banking platform, Email and collaboration (Microsoft 365)",15,Critical,0.25,3.0,4.0,12.0,High,regulatory,"GV.SC-07, ID.AM-07, RS.CO-02"
+R05,Misconfigured cloud storage exposes loan files publicly,Accidental (staff),Cloud document storage (loan files),15,Critical,0.38,2.3,5.0,11.6,High,regulatory,"PR.IR-01, ID.AM-07, DE.CM-01"
+R02,Credential stuffing takes over member online banking accounts,Organized crime,Online and mobile banking,16,Critical,0.5,2.8,4.0,11.2,High,financial,"PR.AA-03, DE.AE-02, PR.PS-04"
+R07,Business email compromise leads to a fraudulent wire transfer,Organized crime,"Email and collaboration (Microsoft 365), Payment and wire transfer system",15,Critical,0.5,2.1,5.0,10.5,High,financial,"PR.AT-01, PR.AA-03, DE.AE-02"
+R08,Backup failure causes prolonged core banking outage,Technical failure,"Backup infrastructure, Core banking platform",10,High,0.08,2.0,4.7,9.3,Medium,operational,"PR.DS-11, RC.RP-03, RC.RP-01"
+R04,Insider exports member records without authorization,Malicious insider,Member CRM database,10,High,0.38,1.6,5.0,7.8,Medium,regulatory,"PR.AA-05, PR.PS-04, DE.CM-09, ID.AM-07"
+R10,Breach is not reported to regulators on time,Process failure,Member CRM database,10,High,0.5,1.4,4.0,5.6,Medium,regulatory,"GV.OC-03, RS.CO-02, RS.MA-01"
+R09,Lost laptop containing member data,Accidental (staff),Staff laptops and workstations,9,Medium,0.75,1.7,3.0,5.0,Low,regulatory,ID.AM-01

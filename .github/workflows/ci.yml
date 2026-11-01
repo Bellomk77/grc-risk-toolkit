@@ -1,0 +1,19 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  assess:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+      - name: Run the assessment and publish the register
+        run: |
+          python -m grc assess examples/maplewood --out reports/maplewood | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: risk-assessment
+          path: reports/maplewood/
