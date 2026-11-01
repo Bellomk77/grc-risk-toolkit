@@ -1,0 +1,10 @@
+assets:
+  - {id: A01, name: Core banking platform, type: application, owner: IT Operations, classification: restricted, criticality: 5, internet_facing: false, vendor_hosted: true}
+  - {id: A02, name: Online and mobile banking, type: application, owner: Digital Channels, classification: restricted, criticality: 5, internet_facing: true}
+  - {id: A03, name: Member CRM database, type: data_store, owner: Member Services, classification: restricted, criticality: 4, internet_facing: false}
+  - {id: A04, name: Staff laptops and workstations, type: endpoint, owner: IT Operations, classification: confidential, criticality: 3, internet_facing: false}
+  - {id: A05, name: Email and collaboration (Microsoft 365), type: cloud_service, owner: IT Operations, classification: confidential, criticality: 4, internet_facing: true}
+  - {id: A06, name: Remote access VPN, type: network, owner: IT Operations, classification: internal, criticality: 4, internet_facing: true}
+  - {id: A07, name: Cloud document storage (loan files), type: data_store, owner: Lending, classification: restricted, criticality: 4, internet_facing: true}
+  - {id: A08, name: Backup infrastructure, type: infrastructure, owner: IT Operations, classification: restricted, criticality: 5, internet_facing: false}
+  - {id: A09, name: Payment and wire transfer system, type: application, owner: Finance, classification: restricted, criticality: 5, internet_facing: false}

@@ -1,0 +1,73 @@
+# Threat scenarios. likelihood: 1 (rare) to 5 (almost certain) before controls.
+# impact: 1 (minor) to 5 (severe) per dimension; the worst dimension drives the score.
+scenarios:
+  - id: R01
+    name: Ransomware delivered by phishing encrypts core systems and backups
+    source: Organized crime
+    assets: [A04, A01, A08]
+    likelihood: 4
+    impact: {financial: 5, operational: 5, regulatory: 4, reputational: 5}
+    controls: [PR.AT-01, PR.AA-03, PR.PS-02, DE.CM-09, PR.DS-11, RC.RP-03, RC.RP-01, RS.MA-01, PR.IR-01]
+  - id: R02
+    name: Credential stuffing takes over member online banking accounts
+    source: Organized crime
+    assets: [A02]
+    likelihood: 4
+    impact: {financial: 4, operational: 2, regulatory: 3, reputational: 4}
+    controls: [PR.AA-03, DE.AE-02, PR.PS-04]
+  - id: R03
+    name: Breach at a critical vendor exposes member data
+    source: Third party
+    assets: [A01, A05]
+    likelihood: 3
+    impact: {financial: 3, operational: 4, regulatory: 5, reputational: 4}
+    controls: [GV.SC-07, ID.AM-07, RS.CO-02]
+  - id: R04
+    name: Insider exports member records without authorization
+    source: Malicious insider
+    assets: [A03]
+    likelihood: 2
+    impact: {financial: 3, operational: 2, regulatory: 5, reputational: 4}
+    controls: [PR.AA-05, PR.PS-04, DE.CM-09, ID.AM-07]
+  - id: R05
+    name: Misconfigured cloud storage exposes loan files publicly
+    source: Accidental (staff)
+    assets: [A07]
+    likelihood: 3
+    impact: {financial: 3, operational: 1, regulatory: 5, reputational: 4}
+    controls: [PR.IR-01, ID.AM-07, DE.CM-01, PR.DS-01]
+  - id: R06
+    name: Unpatched VPN appliance is exploited for network access
+    source: Organized crime / state actor
+    assets: [A06, A01]
+    likelihood: 4
+    impact: {financial: 4, operational: 4, regulatory: 4, reputational: 4}
+    controls: [PR.PS-02, ID.RA-01, PR.AA-03, PR.IR-01, DE.CM-01]
+  - id: R07
+    name: Business email compromise leads to a fraudulent wire transfer
+    source: Organized crime
+    assets: [A05, A09]
+    likelihood: 3
+    impact: {financial: 5, operational: 2, regulatory: 2, reputational: 3}
+    controls: [PR.AT-01, PR.AA-03, DE.AE-02]
+  - id: R08
+    name: Backup failure causes prolonged core banking outage
+    source: Technical failure
+    assets: [A08, A01]
+    likelihood: 2
+    impact: {financial: 4, operational: 5, regulatory: 3, reputational: 4}
+    controls: [PR.DS-11, RC.RP-03, RC.RP-01]
+  - id: R09
+    name: Lost laptop containing member data
+    source: Accidental (staff)
+    assets: [A04]
+    likelihood: 3
+    impact: {financial: 1, operational: 1, regulatory: 3, reputational: 2}
+    controls: [PR.DS-01, ID.AM-01]
+  - id: R10
+    name: Breach is not reported to regulators on time
+    source: Process failure
+    assets: [A03]
+    likelihood: 2
+    impact: {financial: 3, operational: 1, regulatory: 5, reputational: 4}
+    controls: [GV.OC-03, RS.CO-02, RS.MA-01]

@@ -1,0 +1,7 @@
+name: Maplewood Credit Union (fictional)
+sector: Financial services (credit union)
+location: Ontario, Canada
+employees: 180
+members: 42000
+risk_appetite: Low for member data and availability of core banking; moderate for internal tooling.
+regulations: [PIPEDA, FSRA (Ontario credit unions), FINTRAC]

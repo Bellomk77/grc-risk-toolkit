@@ -1,0 +1,25 @@
+# Control assessment mapped to NIST Cybersecurity Framework (CSF) 2.0 subcategories.
+# status: implemented | partial | not_implemented     effort: S (weeks) | M (a quarter) | L (multi-quarter)
+controls:
+  - {id: GV.OC-03, function: Govern, title: "Legal and regulatory requirements are understood and managed", status: partial, effort: S, owner: Compliance, evidence: "Privacy obligations documented; breach-notification steps not mapped to PIPEDA timelines"}
+  - {id: GV.RM-02, function: Govern, title: "Risk appetite and tolerance are defined and communicated", status: not_implemented, effort: S, owner: CRO, evidence: "No board-approved cyber risk appetite statement"}
+  - {id: GV.SC-07, function: Govern, title: "Supplier risks are assessed, prioritized and monitored", status: not_implemented, effort: M, owner: Procurement, evidence: "No security review of core banking or cloud vendors; SOC 2 reports not collected"}
+  - {id: ID.AM-01, function: Identify, title: "Hardware inventory is maintained", status: partial, effort: S, owner: IT Operations, evidence: "Spreadsheet inventory, last updated 9 months ago"}
+  - {id: ID.AM-07, function: Identify, title: "Data inventory (where member data lives) is maintained", status: not_implemented, effort: M, owner: Data Governance, evidence: "No data map; loan files found in three locations"}
+  - {id: ID.RA-01, function: Identify, title: "Vulnerabilities are identified and recorded", status: partial, effort: M, owner: IT Security, evidence: "Annual external scan only; internal assets not scanned"}
+  - {id: PR.AA-03, function: Protect, title: "Users and services are authenticated (MFA)", status: partial, effort: M, owner: IT Security, evidence: "MFA on Microsoft 365; not enforced on VPN or for online banking members"}
+  - {id: PR.AA-05, function: Protect, title: "Access follows least privilege and is reviewed", status: partial, effort: M, owner: IT Security, evidence: "No quarterly access reviews; 14 former staff accounts still active"}
+  - {id: PR.AT-01, function: Protect, title: "Staff receive security awareness training", status: partial, effort: S, owner: HR, evidence: "Annual training video; no phishing simulations"}
+  - {id: PR.DS-01, function: Protect, title: "Data at rest is protected (encryption)", status: implemented, effort: M, owner: IT Operations, evidence: "BitLocker on laptops; database encryption enabled"}
+  - {id: PR.DS-02, function: Protect, title: "Data in transit is protected", status: implemented, effort: S, owner: IT Operations, evidence: "TLS 1.2+ enforced on all external services"}
+  - {id: PR.DS-11, function: Protect, title: "Backups are created, protected and maintained", status: partial, effort: M, owner: IT Operations, evidence: "Nightly backups; not immutable, same network as production"}
+  - {id: PR.IR-01, function: Protect, title: "Networks are protected from unauthorized access", status: partial, effort: M, owner: IT Security, evidence: "Firewall in place; flat internal network, no segmentation of core systems"}
+  - {id: PR.PS-02, function: Protect, title: "Software is patched and maintained", status: partial, effort: M, owner: IT Operations, evidence: "Workstations patched monthly; VPN appliance 4 months behind"}
+  - {id: PR.PS-04, function: Protect, title: "Logs are generated for continuous monitoring", status: partial, effort: M, owner: IT Security, evidence: "Logs kept locally for 30 days; not centralized"}
+  - {id: DE.CM-01, function: Detect, title: "Networks and cloud services are monitored", status: not_implemented, effort: L, owner: IT Security, evidence: "No SIEM; cloud storage sharing not monitored"}
+  - {id: DE.CM-09, function: Detect, title: "Endpoints are monitored (EDR)", status: partial, effort: M, owner: IT Security, evidence: "Antivirus only; no EDR on servers"}
+  - {id: DE.AE-02, function: Detect, title: "Suspicious events are analysed", status: partial, effort: L, owner: IT Security, evidence: "Fraud team reviews wires; no alerting on unusual logins"}
+  - {id: RS.MA-01, function: Respond, title: "Incident response plan is in place and exercised", status: partial, effort: S, owner: CISO, evidence: "Plan written in 2023; never tested with a tabletop exercise"}
+  - {id: RS.CO-02, function: Respond, title: "Stakeholders and regulators are notified of incidents", status: partial, effort: S, owner: Compliance, evidence: "Contact list outdated; FSRA and Privacy Commissioner steps not documented"}
+  - {id: RC.RP-01, function: Recover, title: "Recovery plan is executed and tested", status: not_implemented, effort: M, owner: IT Operations, evidence: "No disaster recovery test in the last 2 years"}
+  - {id: RC.RP-03, function: Recover, title: "Backup integrity is verified before restoring", status: not_implemented, effort: S, owner: IT Operations, evidence: "Restores never tested"}
